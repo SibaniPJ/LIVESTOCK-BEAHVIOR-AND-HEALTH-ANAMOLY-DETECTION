@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ animal_id }} - Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    {% if error %}
+        <h2 class="error">{{ error }}</h2>
+        <a href="/" class="btn">Go Back</a>
+    {% else %}
+        <h1 class="glow-title">Animal ID: {{ animal_id }}</h1>
+        <h3 class="status {{ status_class }}">{{ status }}</h3>
+
+        <div class="card">
+            <h2>Latest Readings</h2>
+            <ul class="data-list">
+                <li><b>Timestamp:</b> {{ latest.timestamp }}</li>
+                <li><b>Temperature:</b> {{ latest.temperature_c }} °C</li>
+                <li><b>Heart Rate:</b> {{ latest.heart_rate_bpm }} bpm</li>
+                <li><b>Behavior:</b> {{ latest.behavior }}</li>
+                <li><b>Anomaly:</b> {{ latest.anomaly }}</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Average Statistics</h2>
+            <ul class="data-list">
+                <li><b>Avg Temperature:</b> {{ avg_temp }} °C</li>
+                <li><b>Avg Heart Rate:</b> {{ avg_hr }} bpm</li>
+                <li><b>Total Anomalies:</b> {{ anomaly_count }}</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Temperature Trend</h2>
+            <img src="{{ url_for('static', filename=animal_id + '_temp_plot.png') }}" alt="Temperature Graph">
+        </div>
+
+        <br>
+        <a href="/" class="btn">🔙 Back to Dashboard</a>
+    {% endif %}
+</div>
+<footer>
+    <p>🐄 Developed by <b>Sibani Priyadarshini Jena</b></p>
+</footer>
+</body>
+</html>

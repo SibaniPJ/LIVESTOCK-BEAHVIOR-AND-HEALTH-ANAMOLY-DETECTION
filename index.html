@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Livestock Health Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1 class="glow-title">🐮 Livestock Health Monitoring Dashboard</h1>
+    <p class="subtitle">Monitor, Analyze & Detect Anomalies in Real-Time</p>
+
+    <div class="card">
+        <form method="POST" action="/details">
+            <label for="animal_id">Select or Enter Animal ID</label><br>
+            <input type="text" id="animal_id" name="animal_id" list="animal_list" placeholder="e.g., Cow_01" required>
+            <datalist id="animal_list">
+                {% for a in animal_ids %}
+                <option value="{{ a }}"></option>
+                {% endfor %}
+            </datalist>
+            <br><br>
+            <button type="submit" class="btn">Show Animal Details</button>
+        </form>
+    </div>
+</div>
+<footer>
+    <p>🐄 Developed by <b>Sibani Priyadarshini Jena</b> | MCA Project</p>
+</footer>
+</body>
+</html>

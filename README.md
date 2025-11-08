@@ -44,8 +44,12 @@ If dataset is from external source, mention:
 ## DATASET SOURCE
 -<a href="https://github.com/SibaniPJ/LIVESTOCK-BEAHVIOR-AND-HEALTH-ANAMOLY-DETECTION/blob/main/livestock_behavior_50000.csv">Dataset</a>
 
-#Image of webpage
+ ## Image of webpage
 ![Project Screenshot](https://raw.githubusercontent.com/SibaniPJ/LIVESTOCK-BEAHVIOR-AND-HEALTH-ANAMOLY-DETECTION/main/Screenshot%20(180).png)
+
+## predicted image
+![Livestock Behavior Screenshot](https://raw.githubusercontent.com/SibaniPJ/LIVESTOCK-BEAHVIOR-AND-HEALTH-ANAMOLY-DETECTION/main/Screenshot%202025-11-07%20001643.png)
+
 
 ## 📦 Technologies Used
 Python

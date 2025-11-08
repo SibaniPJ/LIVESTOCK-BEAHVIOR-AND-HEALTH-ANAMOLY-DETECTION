@@ -41,5 +41,26 @@ Type of Data:
 
 If dataset is from external source, mention:
 
-## DATA SOURCE
-<a href>
+## DATASET SOURCE
+-<a href="https://github.com/SibaniPJ/LIVESTOCK-BEAHVIOR-AND-HEALTH-ANAMOLY-DETECTION/blob/main/livestock_behavior_50000.csv">Dataset</a>
+
+#Image of webpage
+![Project Screenshot](https://raw.githubusercontent.com/SibaniPJ/LIVESTOCK-BEAHVIOR-AND-HEALTH-ANAMOLY-DETECTION/main/Screenshot%20(180).png)
+
+## 📦 Technologies Used
+Python
+NumPy / Pandas / Matplotlib
+Scikit-Learn
+TensorFlow / Keras (for LSTM Autoencoder)
+IoT Sensor Devices (Temperature, GPS, Accelerometer)
+
+## 📣 Output
+Graphs of anomaly scores
+Alerts highlighting abnormal behavior
+Comparison of normal vs abnormal activity trends
+
+## 🐾 Future Enhancements
+Live dashboard (Streamlit / Web App)
+Real-time edge computing on mobile / Raspberry Pi
+Integration with veterinary alert system
+
